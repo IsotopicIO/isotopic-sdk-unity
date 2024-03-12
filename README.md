@@ -23,7 +23,7 @@ Follow the instructions below to download, install and setup the Isotopic Unity 
 - Create a page for your game on the [Isotopic Game Store](https://isotopic.io/game-store). You can follow [this](https://medium.com/@isotopic.io/publishing-on-isotopic-558f9c4c6532) guide.
 
 ### Download and Install
-- Head to Releases and download the latest version of the Unity Package.
+- Head to [Releases](https://github.com/IsotopicIO/isotopic-sdk-unity/releases/) and download the latest version of the Unity Package.
 - Open the package while the Unity Project is open on the editor, and import all assets.
 
 ### SDK Basic Setup
@@ -139,3 +139,20 @@ Isotopic.Network.IsotopicAssets.GetIsotopicAssetBalance(Isotopic.SDKConfig.Isoto
   }
 });
 ```
+
+&nbsp;
+&nbsp;
+
+## > Uploading builds using Isotopic Publisher
+You can use the Isotopic Publisher to upload your builds to the Isotopci Game Store directly through Unity.
+
+- Click on Window/Isotopic/Publishing to get started.
+- In the Isotopic Publisher window, click "Add/Edit Isotopic User", which will highlight the config asset.
+- On the Isotopic Config asset, enter your Isotopic account and app details (if you haven't already, sign up through isotopic.io and create your first app on the website)
+- Head back to the Isotopic Publisher window, and depending on if your build is already zipped or not, enable/disable the "Build Zipped Already?" option.
+- Select the path(s) asked for your build. 
+- Click "Publish to Isotopic", and read the progress on the console below.
+- To upload a new version, you can repeat the process of setting the build paths, and click the Publish button again.
+
+Note: We recommend to include the publishing config asset in your .gitignore as it contains sensitive information (raw password of your account). 
+Do not push this asset online.
