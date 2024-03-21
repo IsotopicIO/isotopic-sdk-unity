@@ -17,4 +17,4 @@ MonoBehaviour:
   chain: SKALE Nebula Hub Testnet
   network: lanky-ill-funny-testnet
   symbol: sFUEL
-  rpc: 
+  rpc: https://testnet.skalenodes.com/v1/lanky-ill-funny-testnet

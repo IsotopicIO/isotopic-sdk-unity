@@ -74,6 +74,7 @@ namespace IsotopicSDK {
                 chainsafeConfig.Symbol = "sFUEL";
                 chainsafeConfig.Rpc = "https://mainnet.skalenodes.com/v1/green-giddy-denebola";
             }
+            ProjectConfigUtilities.Save(chainsafeConfig);
             EditorUtility.ClearDirty(chainsafeConfig);
         }
         private void ConfirmAssetUUIDS()
