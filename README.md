@@ -1,3 +1,4 @@
+![Isotopic SDK Banner](https://isotopic.io/wp-content/uploads/2024/03/isotopic-sdk-banner-2-e1711116426133-1024x353.png)
 # Isotopic SDK - Unity
 This is the official repository for the Isotopic SDK for Unity, an open-source implementation of the Isotopic APIs for use within projects that want to utilize the Isotopic services.
 
@@ -36,6 +37,8 @@ Follow the instructions below to download, install and setup the Isotopic Unity 
 - Open Edit > Project Settings, and go to "Player".
 - Under Configuration, untick "Assembly Version Validation". (This causes an issue with one of the dependencies not accepting a newer version of NewtonSoftJSON.)
 
+![Untick assembly validation](https://dapp.isotopic.io/media/sdk/unity-assembly-validation.png)
+
 &nbsp;
 &nbsp;
 &nbsp;
@@ -49,6 +52,8 @@ Follow the instructions below to download, install and setup the Isotopic Unity 
   - Set a Scene to load on "Scene To Load After Login" on the IsotopicAuthHandler object in the authentication scene, or
   - Add a callback to be invoked through the OnIsotopicUserLoggedIn(Profile) unity event on the IsotopicAuthHandler object, or
   - If you load this scene at runtime as an additive, set the same scene to the "Scene To Unload After Login" parameter on the IsotopicAuthHandler object.
+
+![OAuth Website](https://isotopic.io/wp-content/uploads/2024/03/isotopic-oauth-screenshot-1024x431.jpg)
 
 &nbsp;
 &nbsp;
@@ -65,6 +70,8 @@ using IsotopicSDK.API;
 Texture2D userProfilePic = Isotopic.User.UserProfile.ProfileImage;
 string username = Isotopic.User.UserProfile.Username;
 ```
+
+![My Account on ISOTOPIC](https://dapp.isotopic.io/media/myaccount-isotopic.jpg)
 
 &nbsp;
 &nbsp;
@@ -156,3 +163,5 @@ You can use the Isotopic Publisher to upload your builds to the Isotopci Game St
 
 Note: We recommend to include the publishing config asset in your .gitignore as it contains sensitive information (raw password of your account). 
 Do not push this asset online.
+
+![One-click publisher window](https://isotopic.io/wp-content/uploads/2023/06/Isotopic-One-Click-Publishing-Through-Unity-1024x567.jpg)
